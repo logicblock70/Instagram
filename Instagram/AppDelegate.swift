@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        FIRApp.configure()
+    AdobeUXAuthManager.shared().setAuthenticationParametersWithClientID("cc813e4ca63c40d0bd8dcd0f1ed106a5", withClientSecret: "17e5f287-67d6-46d2-9514-947cf3ae1c18")
         return true
     }
 
